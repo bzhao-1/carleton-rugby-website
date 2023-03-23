@@ -37,5 +37,6 @@
         document.getElementById("timer").innerHTML = "EXPIRED";
       }
     }, 1000);
+
   });
 }(jQuery));
