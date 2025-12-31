@@ -522,8 +522,8 @@ mark,
 }
 
 .img-headshots {
-  height: 375px;
-  max-width: 300px;
+  height: auto;
+  max-width: auto;
 }
 
 .img-thumbnail {
