@@ -1623,7 +1623,7 @@ hr {
   z-index: 1;
 }
 
-.portfolio-section .portfolio-grid .portfolio-wrapper>.img-fluid {
+.portfolio-section .portfolio-grid .portfolio-wrapper .img-fluid {
   width: 100%;
 }
 
