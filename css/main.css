@@ -1608,6 +1608,10 @@ hr {
   margin-bottom: 30px;
   overflow: hidden;
   position: relative;
+  height: 0;
+  padding-bottom: 80%; /* 375x300 ratio (height/width = 300/375 = 80%) */
+  max-width: 375px; /* prevent items from growing wider than ~375px */
+  margin: 0 auto; /* center within column */
 }
 
 .portfolio-section .portfolio-grid .portfolio-wrapper:before {
@@ -1623,14 +1627,20 @@ hr {
   z-index: 1;
 }
 
-.portfolio-section .portfolio-grid .portfolio-wrapper .img-fluid {
+.portfolio-section .portfolio-grid .portfolio-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .portfolio-section .portfolio-grid .portfolio-wrapper .item-content {
   left: 0;
   opacity: 0;
-  padding: 3px 18px;
+  padding: 12px 18px;
   position: absolute;
   text-align: center;
   transition: all 0.15s ease-in-out;
